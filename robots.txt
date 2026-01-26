@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tupaginaweb.lat/sitemap.xml
