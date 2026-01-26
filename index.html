@@ -1,79 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tu Propia Pagina Web</title>
-  <meta name="description" content="Venta de Pokemon competitivos" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Página Web + Dominio</title>
   <style>
-    :root{
-      --bg:#FFF8F2; --text:#1F2937; --muted:#6B7280;
-      --rose:#F4A6C0; --lilac:#C7A4F8; --mint:#8EE5D1;
-      --card:#FFFFFF; --shadow:0 10px 30px rgba(31,41,55,.08);
-      --radius:16px;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
-    *{box-sizing:border-box}
-    body{margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text)}
-    header{position:sticky; top:0; background:rgba(255,255,255,.85); backdrop-filter:saturate(1.2) blur(8px); border-bottom:1px solid rgba(31,41,55,.08); z-index:10}
-    .wrap{max-width:1200px; margin:0 auto; padding:16px}
-    nav{display:flex; align-items:center; justify-content:space-between}
-    .brand{font-family:"Playfair Display",serif; font-weight:700; letter-spacing:.3px}
-    .brand span{color:var(--rose)}
-    .links a{color:var(--muted); text-decoration:none; margin-left:18px}
-    .links a:hover{color:var(--text)}
-
-    /* Layout principal */
-    .main{display:grid; grid-template-columns:1fr 360px; gap:24px; align-items:start; padding:24px 16px}
-    .content .hero{background:var(--card); border:1px solid rgba(31,41,55,.08); border-radius:var(--radius); box-shadow:var(--shadow); padding:24px}
-    .title{font-family:"Playfair Display",serif; font-size:clamp(28px,4vw,44px); margin:0 0 8px}
-    .lead{color:var(--muted)}
-    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:18px}
-    .product{background:var(--card); border:1px solid rgba(31,41,55,.08); border-radius:14px; box-shadow:var(--shadow); padding:14px}
-    .product .img{width:100%; aspect-ratio:1/1; border-radius:12px; background:
-      linear-gradient(135deg, #fff 0%, #FFE6EF 60%, #F4A6C0 100%);
-      position:relative; overflow:hidden;
+    header {
+      background: linear-gradient(135deg, #0066ff, #00cc99);
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
-    .badge{position:absolute; top:10px; left:10px; background:#1F2937; color:#fff; font-size:12px; padding:6px 10px; border-radius:999px}
-    .product h3{margin:12px 0 6px; font-size:18px}
-    .meta{color:var(--muted); font-size:14px}
-    .actions{display:flex; gap:10px; margin-top:12px}
-    .pill{padding:8px 12px; border-radius:999px; border:1px solid rgba(31,41,55,.12); background:#fff}
-
-    /* Sidebar */
-    aside.sidebar{
-      position:sticky; top:84px; height:calc(100vh - 100px); overflow:auto;
-      background:linear-gradient(180deg, #FFE6EF 0%, #F4A6C0 40%, #C7A4F8 100%);
-      border-radius:18px; box-shadow:var(--shadow); color:#fff; padding:16px;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    .side-title{font-family:"Playfair Display",serif; margin:0 0 12px}
-    .panel{background:#fff; color:var(--text); border-radius:14px; padding:14px; margin-bottom:14px; border:1px solid rgba(31,41,55,.08)}
-    .panel h3{margin:0 0 8px; color:#C7A4F8}
-    label{display:block; font-size:13px; color:var(--muted); margin:8px 0 4px}
-    input, select{width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:10px; font-size:14px}
-    .row{display:grid; grid-template-columns:1fr 1fr; gap:10px}
-    .btn{width:100%; padding:10px; border:none; border-radius:10px; background:#C7A4F8; color:#fff; font-weight:600; margin-top:10px}
-    .result{margin-top:8px; font-weight:600; color:#8EE5D1}
-    .toggle{display:flex; align-items:center; gap:8px; margin-top:8px}
-    .toggle input{width:auto}
-
-    /* Responsive */
-    @media (max-width:1000px){ .grid{grid-template-columns:1fr 1fr} }
-    @media (max-width:800px){ .main{grid-template-columns:1fr} aside.sidebar{position:relative; top:auto; height:auto} .grid{grid-template-columns:1fr} }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: #004080;
+      padding: 0.8rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 3rem;
+      text-align: center;
+      background: #e6f2ff;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 1.5rem;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #0066ff;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+    }
+    .cta {
+      background: #00cc99;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .cta:hover {
+      background: #009973;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <nav aria-label="Principal">
-        <div class="brand">Welcome to <span>Pokegirl.Lat</span></div>
-        <div class="links">
-Compra directamente en: 
-           <a href="https://www.facebook.com/profile.php?id=100089680800360">My Facebook </a>
-             <a href="https://www.ebay.com/itm/317714634434"> Ebay </a>
-               </div>
-      </nav>
-    </div>
+    <h1>Tu Página Web + Dominio</h1>
+    <p>Soluciones digitales para PYMES que quieren crecer</p>
   </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#planes">Planes</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Haz que tu negocio brille en internet</h2>
+    <p>Ofrecemos páginas web modernas, seguras y con dominio propio para que tu empresa tenga presencia profesional en línea.</p>
+    <a href="#contacto" class="cta">Solicita tu cotización</a>
+  </section>
+
+  <section id="servicios" class="services">
+    <div class="card">
+      <h3>Diseño Web</h3>
+      <p>Páginas atractivas, responsivas y adaptadas a tu marca.</p>
+    </div>
+    <div class="card">
+      <h3>Dominio Propio</h3>
+      <p>Incluimos la propiedad de tu dominio para mayor confianza.</p>
+    </div>
+    <div class="card">
+      <h3>Soporte Técnico</h3>
+      <p>Asistencia continua para que tu web siempre esté activa.</p>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>📧 contacto@tusitio.com | 📞 (55) 1234-5678</p>
+    <p>© 2026 Tu Empresa Web. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
