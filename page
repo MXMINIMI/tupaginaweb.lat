@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website + Domain Included</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0066ff, #00cc99);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: #004080;
+      padding: 0.8rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 3rem;
+      text-align: center;
+      background: #e6f2ff;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 1.5rem;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #0066ff;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+    }
+    .cta {
+      background: #00cc99;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .cta:hover {
+      background: #009973;
+    }
+
+
+
+
+
+.fila-marcos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.marco {
+  background: white;
+  border: 2px solid #00cc99;
+  border-radius: 12px;
+  padding: 16px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.marco:hover {
+  transform: translateY(-5px);
+}
+
+.marco img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.marco p {
+  font-weight: 600;
+  color: #004080;
+  margin: 0;
+}
+
+
+
+
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Website + Domain starting at $90 USD</h1>
+    <p>Digital solutions for SMEs, Schools, and Professionals who want to grow.</p>
+  </header>
+
+
+
+
+
+
+
+<section class="marcos">
+
+    <h2><p align="center"> Make your business shine online with a professional presence.</p></h2>
+
+  
+ 
+  <div class="fila-marcos">
+    <div class="marco">
+
+      
+      <img src="idea.png" alt="Imagen 1">
+      <p>Tell us your general idea and the name of your page, and we’ll provide a quote  </p>
+    </div>
+    <div class="marco">
+      <img src="idea2.png" alt="Imagen 2">
+      <p>We start building your portal with a 50% upfront payment</p>
+    </div>
+    <div class="marco">
+      <img src="idea3.png" alt="Imagen 3">
+      <p>Website rights are transferred to you upon full payment</p>
+    </div>
+  </div>
+</section>
+
+
+
+      <section id="contacto">
+                        
+  </section>
+
+  <section id="servicios" class="services">
+    <div class="card">
+      <h3>Web desing</h3>
+      <p>Attractive websites, tailored to your brand</p>
+    </div>
+    <div class="card">
+      <h3>Own domain included: your unique name on the web</h3>
+      <p>Your domain is entirely yours, ensuring security and credibility</p>
+    </div>
+    <div class="card">
+      <h3>Affordable prices  </h3>
+      <p>Started $90 USD <br>Includes domain ownership and programming of one main web page. Additional pages at extra cost.
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p> Contacto : MiniMi.Shop@outlook.com  | <a href="https://wa.me/525511895799" target="_blank">
+      <img src="iconow.png" alt="WhatsApp"> </a>
+      (55) 1189-5799 (No llamadas, solo whatsapp)  <Font color="white">
+
+  </Font>
+      
+ </p>
+    <p>© 2026 tupaginaweb.lat .Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
